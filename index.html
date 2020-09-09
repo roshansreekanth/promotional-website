@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+
+    <head>
+        <title>Justice League</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" href="images/JLicon.ico">
+        <!--https://www.iconfinder.com/icons/3151583/comic_dc_justice_league_logo_movie_icon-->
+        <!--License	Creative Commons (Attribution 3.0 Unported)-->
+
+        <!--The script below is a list of related links that appear once the button is clicked-->
+        <script>
+            function dropDown()
+            {
+                document.getElementById("links").style.display ="block";
+            }
+        </script>
+
+        <!--The script below prints different comments based on the input value of the slider-->
+        <script>
+            function rate()
+            {
+                var rating = document.getElementById("likePage").value;
+
+                if  ( rating > 70)
+                {
+                    document.getElementById("comment").innerHTML = "Fab Page!";
+                }
+
+                else if (rating > 45)
+                {
+                    document.getElementById("comment").innerHTML = "Great Work!";
+                }
+
+                else if (rating > 25)
+                {
+                    document.getElementById("comment").innerHTML = "It's Okay!";
+                }
+
+                else
+                {
+                    document.getElementById("comment").innerHTML= "Not a fan";
+                }
+            }
+        </script>
+
+        <!--The function below swaps the image when the mouse is hovered over it-->
+        <script>
+            function swapImage()
+            {
+                document.getElementById("logo").src = "images/logoalt.jpg"
+            }
+        </script>
+
+        <!--The function below reverts the image back to normal when the mouse is moved away from it-->
+        <script>
+            function revertImage()
+            {
+                document.getElementById("logo").src = "images/logo.jpg"
+            }
+        </script>
+
+        <!--The script below generates a random number that displays hero data. Note that the same number can appear twice-->
+        <script>
+            function selectHero()
+            {
+                var number = Math.floor( Math.random()*6) + 1;
+
+                if (number === 1)
+                {
+                    document.getElementById("name").innerHTML = "Batman";
+                    document.getElementById("alias").innerHTML = "Bruce Wayne";
+                    document.getElementById("place").innerHTML = "Gotham City";
+                    document.getElementById("job").innerHTML = "CEO Wayne Enterprises";
+                    document.getElementById("enemy").innerHTML = "Joker";
+                    document.getElementById("emblem").innerHTML = "<img src='images/batman.jpg' class='emblempic' class='alt='Batman Logo'>";
+                    //https://res.cloudinary.com/teepublic/image/private/s--EncKXVuR--/t_Preview/b_rgb:484849,c_limit,f_jpg,h_630,q_90,w_630/v1511012040/production/designs/2072266_1.jpg
+                }
+                if (number === 2)
+                {
+                    document.getElementById("name").innerHTML = "Superman";
+                    document.getElementById("alias").innerHTML = "Clark Kent";
+                    document.getElementById("place").innerHTML = "Planet Krypton";
+                    document.getElementById("job").innerHTML = "Reporter - Daily Planet";
+                    document.getElementById("enemy").innerHTML = "Lex Luthor";
+                    document.getElementById("emblem").innerHTML = "<img src='images/superman.jpg' class='emblempic' alt='Superman Logo'>";
+                    //https://res.cloudinary.com/teepublic/image/private/s--iaiBCm89--/t_Preview/b_rgb:36538b,c_limit,f_jpg,h_630,q_90,w_630/v1485568262/production/designs/1151941_1.jpg
+                }
+                if (number === 3)
+                {
+                    document.getElementById("name").innerHTML = "Wonder Woman";
+                    document.getElementById("alias").innerHTML = "Diana Prince";
+                    document.getElementById("place").innerHTML = "Themyscira, Earth";
+                    document.getElementById("job").innerHTML = "Military Nurse";
+                    document.getElementById("enemy").innerHTML = "Cheetah";
+                    document.getElementById("emblem").innerHTML = "<img src='images/wonderwoman.jpg' class='emblempic' alt='Wonder Woman Logo'>";
+                    //https://res.cloudinary.com/teepublic/image/private/s--N9I0JZmT--/t_Preview/b_rgb:6e2229,c_limit,f_jpg,h_630,q_90,w_630/v1489505698/production/designs/1321961_1.jpg
+                }
+                if (number === 4)
+                {
+                    document.getElementById("name").innerHTML = "Flash";
+                    document.getElementById("alias").innerHTML = "Barry Allen";
+                    document.getElementById("place").innerHTML = "Edmonton, Canada";
+                    document.getElementById("job").innerHTML = "Forensic Chemist";
+                    document.getElementById("enemy").innerHTML = "Reverse-Flash";
+                    document.getElementById("emblem").innerHTML = "<img src='images/flash.jpg' class='emblempic' alt='Flash Logo'>";
+                    //https://res.cloudinary.com/teepublic/image/private/s--I_0-i-nk--/t_Preview/b_rgb:6e2229,c_limit,f_jpg,h_630,q_90,w_630/v1476632747/production/designs/737485_1.jpg
+                }
+                if (number === 5)
+                {
+                    document.getElementById("name").innerHTML = "Cyborg";
+                    document.getElementById("alias").innerHTML = "Victor Stone";
+                    document.getElementById("place").innerHTML = "New York, United States";
+                    document.getElementById("job").innerHTML = "Adventurer";
+                    document.getElementById("enemy").innerHTML = "Vandal Savage";
+                    document.getElementById("emblem").innerHTML = "<img src='images/cyborg.jpg' class='emblempic' alt='Cyborg Logo'>";
+                    //https://i.pinimg.com/originals/ea/90/d5/ea90d5dd396d0cd3168c7097b92ab641.jpg
+                }
+                if (number === 6)
+                {
+                    document.getElementById("name").innerHTML = "Aquaman";
+                    document.getElementById("alias").innerHTML = "Arthur Curry";
+                    document.getElementById("place").innerHTML = "Poseidonis,Atlantis";
+                    document.getElementById("job").innerHTML = "King of Atlantis";
+                    document.getElementById("enemy").innerHTML = "Black Manta";
+                    document.getElementById("emblem").innerHTML = "<img src='images/aquaman.jpg' class='emblempic' alt='Aquaman'>";
+                    //https://res.cloudinary.com/teepublic/image/private/s--ChE1WAcY--/t_Preview/b_rgb:0f7b47,c_limit,f_jpg,h_630,q_90,w_630/v1501961603/production/designs/1794919_1.jpg
+                }
+            }
+
+        </script>
+    </head>
+
+    <body>
+
+        <header>
+                <h1>SOFT6007 Assessment 3 - Javascript</h1>
+        </header>
+
+        <main>
+            <nav>
+                <button id="menu">Movie Links</button>
+                <div id="links">
+                    <ul>
+                        <li><a class="sublink" href="https://www.imdb.com/title/tt0974015/" target="_blank">IMDB Website</a> </li>
+                        <li><a class="sublink" href="https://www.warnerbros.com/justice-league" target="_blank">Official Website</a> </li>
+                    </ul>
+                </div>
+                <form onsubmit="return false;">
+                    <label>Rate this webpage</label>
+                    <input type="range" min="0" max="100" id="likePage">
+                    <div id="comment"></div>
+                </form>
+                <img src="images/logo.jpg" id="logo" onmouseenter="swapImage()" onmouseout="revertImage()" alt="Logo">
+                <!--https://cdn-images-1.medium.com/max/1600/1*zigiWMkBTNC_C86ufS9wHQ.jpeg-->
+            </nav>
+
+            <div id="characters">
+                <table>
+                    <caption><p><button id="choose">Choose your hero</button></p><span id="name"></span></caption>
+                    <!--The button was made a part of <caption> so it aligns properly-->
+                    <tr>
+                        <td class="descriptor">Alias:</td>
+                        <td id="alias"></td>
+                    </tr>
+                    <tr>
+                        <td class="descriptor">Birth Place:</td>
+                        <td id="place"></td>
+                    </tr>
+                    <tr>
+                        <td class="descriptor">Worked as:</td>
+                        <td id="job"></td>
+                    </tr>
+                    <tr>
+                        <td class="descriptor">Main Enemy:</td>
+                        <td id="enemy"></td>
+                    </tr>
+                </table>
+                <div id="herologo">
+                    <p>Logo</p>
+                    <span id="emblem"></span>
+                </div>
+            </div>
+            <div id="content">
+                <h2>Who is your favourite member of the Justice League?</h2>
+                <img src="images/JLposter.jpg" alt="Justice League" id="picture">
+                <!--https://media.fromthegrapevine.com/assets/images/2017/3/justice-league-movie.jpg.480x0_q71_crop-scale.jpg-->
+            </div>
+        </main>
+
+        <footer>
+            <!--The scrips below listen for clicks or hover over interactive objects and call their related functions-->
+                <script>
+                    document.getElementById("menu").onclick = dropDown;
+                </script>
+                <script>
+                    document.getElementById("likePage").onchange = rate;
+                </script>
+                <script>
+                    document.getElementById("choose").onclick = selectHero;
+                </script>
+
+                <span id="copyright">&copy;2018 DC Comics</span>
+                <span id="contact"><a href="mailto:roshansreekanth@domain.com">E-mail: roshansreekanth@domain.com</a> </span>
+        </footer>
+    </body>
+</html>

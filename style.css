@@ -1,0 +1,148 @@
+*
+{
+    font-family: "Trebuchet MS";
+}
+
+body
+{
+    background: rgb(50, 54, 57);
+}
+
+header
+{
+    color: white;
+    text-align: center;
+    border-bottom: white 1px solid;
+    margin-bottom: 1%;
+}
+
+#menu
+{
+    background-color: black;
+    color: white;
+    padding: 10%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+nav
+{
+    float: left;
+    width: 10%;
+}
+
+#links
+{
+    display: none;
+}
+
+#links ul
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#links li
+{
+    margin-bottom: 5%;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+label
+{
+    color: white;
+}
+
+#comment
+{
+    color: white;
+}
+
+form
+{
+
+    text-align: center;
+    margin-top: 50%;
+
+}
+
+#content
+{
+    text-align: center;
+}
+
+#content h2
+{
+    color: white;
+}
+
+#characters
+{
+    float: right;
+}
+
+#choose
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+#logo
+{
+    margin-top: 20%;
+}
+
+table
+{
+    color: white;
+    text-align: center;
+    border: white 1px solid;
+}
+
+.descriptor
+{
+    font-weight: bold;
+}
+
+#herologo
+{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.emblempic
+{
+    border: white 1px solid;
+}
+
+footer
+{
+    margin-top: 5%;
+    background-color: black;
+    border: white 1px solid;
+}
+
+#copyright
+{
+    color: white;
+    font-size: small;
+}
+
+#contact
+{
+    float: right;
+    color: white;
+}
